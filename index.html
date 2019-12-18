@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Tip</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main class="main-container">
+        <header>
+            <h1>TravelTip</h1>
+            <div class="enter-location" onclick="onEntLocModal()">Enter Location</div>
+            <button>Go</button>
+            <div class="my-location" onclick="onCenterToMyLoc()">
+                <h2>My Location</h2>
+            </div>
+        </header>
+
+    <div class="location-info">
+        <h2>Location: <span class="curr-loc">Current Loc</span></h2>
+        <button class="onCopyLoc()">Copy Location</button>
+    </div>
+
+    <table>
+        <thead>
+            <td>Id</td>
+            <td class="td-info">Info</td>
+            <td class="td-weather">Weather</td>
+            <td>Actions</td>
+        </thead>
+        <tbody class="loc-info-container"></tbody>
+    </table>
+
+    <div class="map-container"></div>
+    <div class="weather-container"></div>
+    </main>
+
+    <script src="lib/swal.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

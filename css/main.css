@@ -1,0 +1,44 @@
+/* base */
+body{
+    margin:0
+}
+
+table, tr, td {
+    border: 1px solid black;
+    background-color: white;
+}
+/* layout */
+.main-container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(182, 83, 17);
+}
+
+header{
+    display:flex;
+    align-items: center;
+}
+
+header h1{
+    margin-right: 40vw;
+}
+
+header button{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+header h2{
+    border: 1px solid grey;
+}
+
+.enter-location{
+    display: block;
+    border: 1px solid grey;
+    height: 30px;
+}
+
+.location-info{
+    display:flex;
+    justify-content: space-between;
+}
