@@ -9,37 +9,43 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body onload="init()">
     <main class="main-container">
         <header>
             <h1>TravelTip</h1>
-            <div class="enter-location" onclick="onEntLocModal()">Enter Location</div>
-            <button>Go</button>
+            <input type="text" class="input-loc">
+            <button onclick="onGeocodeMapCenter()">Go</button>
             <div class="my-location" onclick="onCenterToMyLoc()">
                 <h2>My Location</h2>
             </div>
         </header>
 
-    <div class="location-info">
-        <h2>Location: <span class="curr-loc">Current Loc</span></h2>
-        <button class="onCopyLoc()">Copy Location</button>
-    </div>
+        <div class="location-info">
+            <h2>Location: <span class="curr-loc">Current Loc</span></h2>
+            <button class="onCopyLoc()">Copy Location</button>
+        </div>
 
-    <table>
-        <thead>
-            <td>Id</td>
-            <td class="td-info">Info</td>
-            <td class="td-weather">Weather</td>
-            <td>Actions</td>
-        </thead>
-        <tbody class="loc-info-container"></tbody>
-    </table>
+        <div class="map-container">
+            <table>
+                <thead>
+                    <td>Id</td>
+                    <td class="td-info">Info</td>
+                    <td class="td-weather">Weather</td>
+                    <td>Actions</td>
+                </thead>
+                <tbody class="loc-info-container"></tbody>
+            </table>
 
-    <div class="map-container"></div>
-    <div class="weather-container"></div>
+            <div class="map"></div>
+            <div class="weather-container"></div>
+        </div>
     </main>
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefK5rZJukPRI5ItVKFoyaNpKPLcS1Luw" async
+        defer></script>
     <script src="lib/swal.js"></script>
+    <script src="lib/axios.js"></script>
+    <script src="js/cmps/location-preview.js"></script>
     <script src="js/service.js"></script>
     <script src="js/main.js"></script>
 </body>

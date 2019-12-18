@@ -7,6 +7,8 @@ table, tr, td {
     border: 1px solid black;
     background-color: white;
 }
+
+
 /* layout */
 .main-container{
     width: 100%;
@@ -39,6 +41,18 @@ header h2{
 }
 
 .location-info{
+    display:flex;
+    justify-content: space-between;
+}
+
+.map{
+    float: right;
+    background-color: transparent;
+    height: 400px;
+    width: 400px;
+}
+
+.map-container{
     display:flex;
     justify-content: space-between;
 }
