@@ -1,4 +1,4 @@
-const APIKEY = 'AIzaSyCefK5rZJukPRI5ItVKFoyaNpKPLcS1Luw';
+const APIKEY = '';
 let gCurrPos = {};
 let gLocations = [];
 let gMarkers = [];
